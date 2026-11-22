@@ -1,0 +1,50 @@
+﻿# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter cache
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Private network logs and telemetry
+/logs/*
+!/logs/.gitkeep
+
+# Large raw CICIoT2023 dataset
+/dataset/MERGED_CSV/
+
+# Include only the active runtime models
+/models/*
+!/models/live_isolation_forest.pkl
+!/models/random_forest_improved_ciciot2023.pkl
+!/models/random_forest_live_hybrid.pkl
+
+# Temporary files
+*.tmp
+*.bak
+
+# Keep only the runtime Isolation Forest baseline
+/dataset/live_baseline/*
+!/dataset/live_baseline/normal_traffic_combined.csv
+
+# Keep experimental live validation captures local
+/dataset/live_rf_validation/
+
+
+# Prevent accidental nested clone
+/AI-Based-Live-traffic-Capture-and-IDS/
